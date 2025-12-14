@@ -4,7 +4,7 @@ Version: 0.1.0
 Summary: A modular MLOps project structure
 Home-page: https://github.com/antarnath/Modular-Workflow-and-Project-Setup-Basics
 Author: Antar Chandra Nath
-Author-email: antarnath.cse@gmail.com
+Author-email: antar.ch.nath@gmail.com
 Classifier: Development Status :: 3 - Beta
 Classifier: Intended Audience :: ML Engineers
 Classifier: Programming Language :: Python >= 3.8

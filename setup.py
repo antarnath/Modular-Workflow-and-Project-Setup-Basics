@@ -13,7 +13,7 @@ setup(
   name = "mlops_modular_project",
   version="0.1.0",
   author="Antar Chandra Nath",
-  author_email="antarnath.cse@gmail.com",
+  author_email="antar.ch.nath@gmail.com",
   description = "A modular MLOps project structure",
   long_description = long_description,
   long_description_content_type = "text/markdown",
