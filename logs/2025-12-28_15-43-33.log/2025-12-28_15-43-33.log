@@ -1,0 +1,99 @@
+[2025-12-28 15:43:36,194] 21 root - INFO - Data Ingestion has started
+[2025-12-28 15:43:36,194] 23 root - INFO - Data reading using pandas from local file system
+[2025-12-28 15:43:36,212] 25 root - INFO - Data reading has been completed
+[2025-12-28 15:43:36,273] 29 root - INFO - Raw data store successfully
+[2025-12-28 15:43:36,276] 32 root - INFO - Raw data has been split into train and test data set!!
+[2025-12-28 15:43:36,316] 35 root - INFO - train data store successfully
+[2025-12-28 15:43:36,326] 38 root - INFO - Test data store successfully
+[2025-12-28 15:43:36,326] 39 root - INFO - Data Ingestion is completed
+[2025-12-28 15:43:36,327] 49 root - INFO - Feature store configuration written to /media/antar-chandra-nath/Media/Poridhi/Project/Modular-Workflow-and-Project-Setup-Basics/feature_repo/feature_store.yaml
+[2025-12-28 15:43:36,327] 53 root - INFO - Feature store configuration content:
+project: income_prediction
+registry: data/registry.db
+provider: local
+online_store:
+  type: sqlite
+offline_store:
+  type: file
+entity_key_serialization_version: 2
+[2025-12-28 15:43:36,534] 57 root - INFO - Feature store initialized successfully.
+[2025-12-28 15:43:36,554] 108 root - INFO - Read Train and Test data completed.
+[2025-12-28 15:43:36,570] 109 root - INFO - some data    age  workclass  education_num  marital_status  occupation  relationship  race  sex  capital_gain  capital_loss  hours_per_week  native_country  income
+0    36          3              9               5           0             1     4    0             0             0              38              38       0
+1    52          3              9               0           2             1     4    1          3325             0              40              38       0
+2    34          3             10               2           0             0     4    1             0             0              40              38       1
+3    54          3              9               0          13             1     2    1             0             0              40              38       0
+4    30          3              9               2           9             0     4    1             0             0              55              38       0
+5    34          3              5               2           2             0     4    1             0             0              50              38       0
+6    56          3              9               0          13             1     4    1             0             0              30              38       0
+7    64          3              9               2          13             0     4    1             0             0              40              38       0
+8    46          3             13               2           7             0     4    1             0             0              30              38       1
+9    43          3             10               2           9             5     4    0             0          1887              50              38       1
+10   41          3              9               0          11             4     2    0             0             0              38              38       0
+11   30          1             10               4           0             3     4    0             0             0              10              38       0
+12   66          3             14               2          11             0     4    1             0             0              50              38       0
+13   30          3              6               4           2             1     4    1             0             0              50              38       0
+14   41          1             10               2           2             0     4    1             0             0              40              38       0
+15   27          3              9               0           2             1     4    1             0             0              50              38       0
+16   50          1              9               2          10             0     4    1             0             0              40              38       0
+17   28          3             10               4           2             1     2    1             0             0              40              38       0
+18   50          3             13               0           0             1     4    0             0             0               8              38       0
+19   54          1              9               2           4             0     4    1             0             0              40              38       0
+
+
+     age  workclass  education_num  marital_status  occupation  relationship  race  sex  capital_gain  capital_loss  hours_per_week  native_country  income
+0    31          6             11               2           2             0     4    1             0             0              40              38       0
+1    24          0             13               4           3             1     4    1             0             0              40              38       0
+2    60          1             10               2           7             0     1    1             0             0              60              29       0
+3    31          3             10               4           3             1     4    1             0             0              40              38       0
+4    43          0             13               4           3             1     4    1             0             0              40              38       1
+5    50          3              9               0           6             1     0    0             0             0              40              38       0
+6    66          6              6               0           7             1     2    0             0             0              40              38       0
+7    25          3              9               4           7             3     4    0             0             0              25              38       0
+8    58          3              9               2           0             5     4    0             0             0              40              38       1
+9    45          3             14               2           3             0     4    1             0             0              50              38       1
+10   43          5             13               4          11             1     4    1             0             0              42              38       0
+11   29          3             16               2           9             0     4    1             0             0              50              38       1
+12   29          3              3               4           7             1     4    1             0             0              25              25       0
+13   55          3              3               2           6             0     4    1             0             0              40              25       0
+14   53          3              9               2           3             0     4    1         99999             0              40              38       1
+15   33          3              9               2          11             0     4    1             0             0              45              38       1
+16   25          3              6               4           9             3     2    1             0             0              40              38       0
+17   25          3             10               4           7             2     3    0             0             0              25               6       0
+18   51          3             10               2           0             5     4    0             0             0              35              38       0
+19   38          3             10               0          13             1     2    1             0             0              55              38       0
+[2025-12-28 15:43:36,570] 65 root - INFO - Data transformation has been started.
+[2025-12-28 15:43:36,572] 122 root - INFO - Applying preprocessing object on training and testing datasets.
+[2025-12-28 15:43:36,609] 127 root - INFO - Starting Feature Store ingestion process.
+[2025-12-28 15:43:36,623] 165 root - INFO - Save feature data to feature_repo/data/train_features.parquet successfully.
+[2025-12-28 15:43:36,624] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:43:36,632] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:43:36,632] 203 root - INFO - Applied entity and feature view for train to the feature store successfully.
+[2025-12-28 15:43:36,632] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:43:36,634] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:43:36,634] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:43:36,634] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:43:36,634] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:43:36,634] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:43:36,635] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:43:37,230] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:43:37,231] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:43:37,231] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:43:37,231] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:43:39,766] 131 root - INFO - Push train data to feature store
+[2025-12-28 15:43:39,771] 165 root - INFO - Save feature data to feature_repo/data/test_features.parquet successfully.
+[2025-12-28 15:43:39,772] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:43:39,777] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:43:39,777] 203 root - INFO - Applied entity and feature view for test to the feature store successfully.
+[2025-12-28 15:43:39,777] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:43:39,779] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:43:39,779] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:43:39,779] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:43:39,779] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:43:39,780] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:43:39,780] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:43:42,250] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:43:42,250] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:43:42,251] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:43:42,251] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:43:42,969] 134 root - INFO - Push test data to feature store

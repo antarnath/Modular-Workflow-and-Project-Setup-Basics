@@ -1,0 +1,74 @@
+[2025-12-28 15:21:05,116] 21 root - INFO - Data Ingestion has started
+[2025-12-28 15:21:05,116] 23 root - INFO - Data reading using pandas from local file system
+[2025-12-28 15:21:05,131] 25 root - INFO - Data reading has been completed
+[2025-12-28 15:21:05,184] 29 root - INFO - Raw data store successfully
+[2025-12-28 15:21:05,188] 32 root - INFO - Raw data has been split into train and test data set!!
+[2025-12-28 15:21:05,229] 35 root - INFO - train data store successfully
+[2025-12-28 15:21:05,239] 38 root - INFO - Test data store successfully
+[2025-12-28 15:21:05,239] 39 root - INFO - Data Ingestion is completed
+[2025-12-28 15:21:05,239] 49 root - INFO - Feature store configuration written to /media/antar-chandra-nath/Media/Poridhi/Project/Modular-Workflow-and-Project-Setup-Basics/feature_repo/feature_store.yaml
+[2025-12-28 15:21:05,239] 53 root - INFO - Feature store configuration content:
+project: income_prediction
+registry: data/registry.db
+provider: local
+online_store:
+  type: sqlite
+offline_store:
+  type: file
+entity_key_serialization_version: 2
+[2025-12-28 15:21:05,463] 57 root - INFO - Feature store initialized successfully.
+[2025-12-28 15:21:05,483] 108 root - INFO - Read Train and Test data completed.
+[2025-12-28 15:21:05,484] 65 root - INFO - Data transformation has been started.
+[2025-12-28 15:21:05,485] 121 root - INFO - Applying preprocessing object on training and testing datasets.
+[2025-12-28 15:21:05,518] 126 root - INFO - Starting Feature Store ingestion process.
+[2025-12-28 15:21:05,546] 164 root - INFO - Save feature data to feature_repo/data/train_features.parquet successfully.
+[2025-12-28 15:21:05,547] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:21:05,558] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:21:05,558] 202 root - INFO - Applied entity and feature view for train to the feature store successfully.
+[2025-12-28 15:21:05,558] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:21:05,559] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:21:05,559] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:21:05,560] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:21:05,560] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:21:05,560] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:21:05,560] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:21:06,163] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:21:06,163] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:21:06,163] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:21:06,163] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:21:08,484] 130 root - INFO - Push train data to feature store
+[2025-12-28 15:21:08,488] 164 root - INFO - Save feature data to feature_repo/data/test_features.parquet successfully.
+[2025-12-28 15:21:08,489] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:21:08,493] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:21:08,493] 202 root - INFO - Applied entity and feature view for test to the feature store successfully.
+[2025-12-28 15:21:08,493] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:21:08,495] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:21:08,495] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:21:08,495] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:21:08,495] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:21:08,495] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:21:08,496] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:21:10,618] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:21:10,618] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:21:10,618] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:21:10,618] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2025-12-28 15:21:11,298] 133 root - INFO - Push test data to feature store
+[2025-12-28 15:21:11,299] 21 root - ERROR - 
+Error occurred in python script:
+→ File: /media/antar-chandra-nath/Media/Poridhi/Project/Modular-Workflow-and-Project-Setup-Basics/src/utils.py
+→ Line number: 13
+→ Error message: [Errno 21] Is a directory: 'feature_repo'
+[2025-12-28 15:21:11,300] 146 root - ERROR - Error in initiate_data_transformation 
+Error occurred in python script:
+→ File: /media/antar-chandra-nath/Media/Poridhi/Project/Modular-Workflow-and-Project-Setup-Basics/src/utils.py
+→ Line number: 13
+→ Error message: [Errno 21] Is a directory: 'feature_repo'
+[2025-12-28 15:21:11,300] 21 root - ERROR - 
+Error occurred in python script:
+→ File: /media/antar-chandra-nath/Media/Poridhi/Project/Modular-Workflow-and-Project-Setup-Basics/src/components/data_transformation.py
+→ Line number: 138
+→ Error message: 
+Error occurred in python script:
+→ File: /media/antar-chandra-nath/Media/Poridhi/Project/Modular-Workflow-and-Project-Setup-Basics/src/utils.py
+→ Line number: 13
+→ Error message: [Errno 21] Is a directory: 'feature_repo'

@@ -1,0 +1,8 @@
+[2025-12-22 20:02:10,813] 20 root - INFO - Data Ingestion has started
+[2025-12-22 20:02:10,813] 22 root - INFO - Data reading using pandas from local file system
+[2025-12-22 20:02:10,828] 24 root - INFO - Data reading has been completed
+[2025-12-22 20:02:10,874] 28 root - INFO - Raw data store successfully
+[2025-12-22 20:02:10,877] 31 root - INFO - Raw data has been split into train and test data set!!
+[2025-12-22 20:02:10,914] 34 root - INFO - train data store successfully
+[2025-12-22 20:02:10,923] 37 root - INFO - Test data store successfully
+[2025-12-22 20:02:10,923] 38 root - INFO - Data Ingestion is completed
