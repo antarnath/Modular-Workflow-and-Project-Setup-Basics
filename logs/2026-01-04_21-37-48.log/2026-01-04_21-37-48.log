@@ -1,0 +1,80 @@
+[2026-01-04 21:37:51,429] 22 root - INFO - Data Ingestion has started
+[2026-01-04 21:37:51,429] 24 root - INFO - Data reading using pandas from local file system
+[2026-01-04 21:37:51,445] 26 root - INFO - Data reading has been completed
+[2026-01-04 21:37:51,499] 30 root - INFO - Raw data store successfully
+[2026-01-04 21:37:51,503] 33 root - INFO - Raw data has been split into train and test data set!!
+[2026-01-04 21:37:51,543] 36 root - INFO - train data store successfully
+[2026-01-04 21:37:51,554] 39 root - INFO - Test data store successfully
+[2026-01-04 21:37:51,554] 40 root - INFO - Data Ingestion is completed
+[2026-01-04 21:37:51,554] 31 root - INFO - This is repo path /media/antar-chandra-nath/Media/Poridhi/Project/Modular-Workflow-and-Project-Setup-Basics/feature_repo
+[2026-01-04 21:37:51,554] 50 root - INFO - Feature store configuration written to /media/antar-chandra-nath/Media/Poridhi/Project/Modular-Workflow-and-Project-Setup-Basics/feature_repo/feature_store.yaml
+[2026-01-04 21:37:51,554] 54 root - INFO - Feature store configuration content:
+project: income_prediction
+registry: data/registry.db
+provider: local
+online_store:
+  type: sqlite
+offline_store:
+  type: file
+entity_key_serialization_version: 2
+[2026-01-04 21:37:51,801] 58 root - INFO - Feature store initialized successfully.
+[2026-01-04 21:37:51,822] 109 root - INFO - Read Train and Test data completed.
+[2026-01-04 21:37:51,822] 66 root - INFO - Data transformation has been started.
+[2026-01-04 21:37:51,825] 122 root - INFO - Applying preprocessing object on training and testing datasets.
+[2026-01-04 21:37:51,853] 127 root - INFO - Starting Feature Store ingestion process.
+[2026-01-04 21:37:51,869] 166 root - INFO - Save feature data to feature_repo/data/train_features.parquet successfully.
+[2026-01-04 21:37:51,871] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2026-01-04 21:37:51,882] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2026-01-04 21:37:51,882] 204 root - INFO - Applied entity and feature view for train to the feature store successfully.
+[2026-01-04 21:37:51,882] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2026-01-04 21:37:51,884] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2026-01-04 21:37:51,884] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2026-01-04 21:37:51,884] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2026-01-04 21:37:51,884] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2026-01-04 21:37:51,884] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2026-01-04 21:37:51,884] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2026-01-04 21:37:52,575] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2026-01-04 21:37:52,576] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2026-01-04 21:37:52,576] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2026-01-04 21:37:52,576] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2026-01-04 21:37:55,514] 131 root - INFO - Push train data to feature store
+[2026-01-04 21:37:55,519] 166 root - INFO - Save feature data to feature_repo/data/test_features.parquet successfully.
+[2026-01-04 21:37:55,520] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2026-01-04 21:37:55,525] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2026-01-04 21:37:55,525] 204 root - INFO - Applied entity and feature view for test to the feature store successfully.
+[2026-01-04 21:37:55,525] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2026-01-04 21:37:55,527] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2026-01-04 21:37:55,527] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2026-01-04 21:37:55,527] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2026-01-04 21:37:55,527] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2026-01-04 21:37:55,527] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2026-01-04 21:37:55,527] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2026-01-04 21:37:58,115] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2026-01-04 21:37:58,115] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2026-01-04 21:37:58,115] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2026-01-04 21:37:58,115] 997 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2026-01-04 21:37:58,733] 134 root - INFO - Push test data to feature store
+[2026-01-04 21:37:59,655] 124 root - INFO - Starting model training pipeline
+[2026-01-04 21:37:59,656] 167 root - INFO - Training RandomForest
+[2026-01-04 21:37:59,726] 55 root - INFO - Started training with model RandomForest
+[2026-01-04 21:38:29,775] 76 root - INFO - Best parameter for RandomForest: {'best_class_weight': 'balanced', 'best_max_depth': 10, 'best_min_samples_split': 5, 'best_n_estimators': 20}
+[2026-01-04 21:38:33,071] 115 root - INFO - Completed model training RandomForest
+[2026-01-04 21:38:33,099] 167 root - INFO - Training DecisionTree
+[2026-01-04 21:38:33,115] 55 root - INFO - Started training with model DecisionTree
+[2026-01-04 21:38:39,920] 76 root - INFO - Best parameter for DecisionTree: {'best_class_weight': 'balanced', 'best_criterion': 'entropy', 'best_max_depth': 6, 'best_min_samples_split': 2}
+[2026-01-04 21:38:42,352] 115 root - INFO - Completed model training DecisionTree
+[2026-01-04 21:38:42,368] 167 root - INFO - Training LogisticRegression
+[2026-01-04 21:38:42,382] 55 root - INFO - Started training with model LogisticRegression
+[2026-01-04 21:38:45,726] 76 root - INFO - Best parameter for LogisticRegression: {'best_C': 10, 'best_class_weight': 'balanced', 'best_solver': 'liblinear'}
+[2026-01-04 21:38:48,000] 115 root - INFO - Completed model training LogisticRegression
+[2026-01-04 21:38:48,024] 187 root - INFO - Best model: RandomForest with accuracy:0.8086969883220652
+[2026-01-04 21:38:48,217] 21 root - ERROR - 
+Error occurred in python script:
+→ File: /media/antar-chandra-nath/Media/Poridhi/Project/Modular-Workflow-and-Project-Setup-Basics/src/utils.py
+→ Line number: 12
+→ Error message: [Errno 21] Is a directory: 'artifacts/model_trainer/model.pkl'
+[2026-01-04 21:38:48,217] 221 root - ERROR - Error in model training pipeline: 
+Error occurred in python script:
+→ File: /media/antar-chandra-nath/Media/Poridhi/Project/Modular-Workflow-and-Project-Setup-Basics/src/utils.py
+→ Line number: 12
+→ Error message: [Errno 21] Is a directory: 'artifacts/model_trainer/model.pkl'
