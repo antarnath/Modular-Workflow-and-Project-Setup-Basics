@@ -5,7 +5,7 @@ import numpy as np
 from src.logger import logging
 from src.exception import CustomException
 from dataclasses import dataclass
-from utils import load_object
+from src.utils import load_object
 
 
 class PredictionPipeline:
